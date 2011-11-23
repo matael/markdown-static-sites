@@ -1,0 +1,54 @@
+Markdown Static Sites
+=====================
+
+Why
+---
+
+I've created this tool 'cause one day, I needed a __really simple tool__ to create static sites without using HTML for the whole creation.
+
+I based the developement on [c9s' markdown-git-wiki](http://github.com/c9s/markdown-git-wiki) that I had already forked.
+
+How
+---
+
+This tool use the original `Markdown.pl` script from [daringfireball](http://daringfireball.net/projects/markdown).
+
+Look at the `Makefile` for further details.
+
+To turn markdown files into html files, just use :
+
+    $ make pages
+
+To copy all the media (CSS files + `media/`) into the `pages` directory, you can use :
+
+    $ make media
+
+To do all as one :
+
+    $ make
+
+or 
+
+    $ make all
+
+Served by a webserver
+---------------------
+
+A simple web server could serve your website (which is located under the `pages` directory).
+
+### Apache example
+
+Here is an example of an __Apache vHost__ serving the website (website location : `/home/me/website/`) :
+
+
+    <VirtualHost *:80>
+        ServerName example.com
+        ServerAdmin admin@example.com
+        DocumentRoot /home/me/website
+        <Directory /home/me/website>
+            Options Indexes FollowSymLinks MultiViews
+            AllowOverride None
+            Order allow,deny
+            allow from all
+        </Directory>
+    </VirtualHost>
