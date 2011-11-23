@@ -1,0 +1,12 @@
+#!/bin/bash
+IN_DIR=$1
+OUTPUT_DIR=$2
+TEMPLATE=$3
+
+for i in $IN_DIR/*.mkd ; do
+    file=$(basename $i)
+    echo "Converting $file ..."
+    cat $TEMPLATE/begin > $OUTPUT_DIR/${file/.mkd/.html}
+    perl bin/Markdown.pl $i >> $OUTPUT_DIR/${file/.mkd/.html}
+    cat $TEMPLATE/end >> $OUTPUT_DIR/${file/.mkd/.html}
+done;
