@@ -19,6 +19,7 @@ To turn markdown files into html files, just use :
 
     $ make pages
 
+You can add media (pictures, lolcats, etc...) in the `media/` directory (you have to create it)
 To copy all the media (CSS files + `media/`) into the `pages` directory, you can use :
 
     $ make media
