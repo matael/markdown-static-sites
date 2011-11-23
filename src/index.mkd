@@ -1,0 +1,13 @@
+Here is the first page of your __webiste__ !
+
+Feel free to _modify_ it and to _create_ other pages in the `src/` directory using your favorite text and the [markdown](http://daringfireball.net/projects/markdown/syntax).
+
+You can also, of course, modify the files `template/begin` and `template/end` to customize this site. when you run make, `.mkd` files are transformed into `.html` in a `pages` directory using this model :
+
+    content of begin file
+
+    translated HTML for mkd files
+
+    content of end file
+
+read the readme for more informations
