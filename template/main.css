@@ -1,0 +1,36 @@
+body {
+    width : 900px;
+    margin : auto;
+    color : #424242;
+    font-family : Arial, serif;
+}
+
+a {
+    color : #424242;
+}
+
+a:hover {
+    color : #751F22;
+}
+
+body > header {
+    margin-bottom : 50px;
+    text-align : center;
+}
+
+body > header > h1 {
+    font-size : 42px;
+    font-weight : bold;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    color:#c1c1c1;
+}
+
+footer p:hover {
+    color:#1c1c1c;
+}
