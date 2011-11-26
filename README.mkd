@@ -1,6 +1,9 @@
 Markdown Static Sites
 =====================
 
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=Matael&url=https://github.com/Matael/markdown-static-sites&title=Markdown Static Sites&language=en_GB&tags=github&category=software) 
+
+
 Why
 ---
 
