@@ -7,9 +7,9 @@ OUTPUT_DIR=$2
 TEMPLATE=$3
 
 mkdir pages
-for /r src %%G do (
-    echo "Converting..."
-    type template/begin > pages/%%~nG.mkd
-    perl.exe bin/Markdown.pl $i >> pages/%%~nG.mkd
-    type template/end >> pages/%%~nG.mkd
+for %%G in (src/*.mkd) do (
+echo "Converting..."
+type template/begin > pages/%%~nG.mkd
+perl.exe bin/Markdown.pl $i > pages/%%~nG.mkd
+type template/end >> pages/%%~nG.mkd
 )
