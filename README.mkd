@@ -35,6 +35,18 @@ or
 
     $ make all
 
+### On Windows
+
+I've also try to implement the same targets that in makefile using batch scripts (argh...).
+To use this tools, just copy the content of `win_tools` folder to the directory's root.
+
+Instead of make use the following commands :
+
+- `make pages` => `pages.cmd`
+- `make media` => `media.cmd`
+- `make clean` => `clean.cmd`
+
+
 Served by a webserver
 ---------------------
 
